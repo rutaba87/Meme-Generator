@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "karla", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  padding: 20px;
+}
+.header-img {
+  height: 100px;
+  margin: 6px;
+}
+.header-title {
+  margin-left: 20px;
+  font-size: 30px;
+}
+.header-project {
+  margin-left: 55%;
+  font-size: 15px;
+  font-weight: 500;
+}
+/* Main Element CSS */
+.main {
+  margin: 30px;
+  padding: 36px;
+}
+.form {
+  display: grid;
+  /* in grid template , here, padding is 40 pixel , first 40 pixel is for upper text fields and second 40pixel padding is for button  and 1fr is the half of the whole , we have write 1fr 2x its means that both text fiels will take the half half space of the whole. */
+  grid-template: 40px 40px/ 1fr 1fr;
+  gap: 17px;
+}
+.inputs {
+  font-family: "karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 6px;
+}
+.btn {
+  grid-column-end: span 3;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: #ffff;
+  font-family: "karla", sans-serif;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+/* editing meme--images's size etc */
+
+.meme {
+  position: relative;
+}
+
+.meme--img {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-justify: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
